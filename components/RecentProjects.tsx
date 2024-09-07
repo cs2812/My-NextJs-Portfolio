@@ -7,10 +7,12 @@ import { PinContainer } from "./Ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-purple">
+          recent projects
+</span>
       </h1>
       {/* Projects section */}
       <div
@@ -21,7 +23,8 @@ const RecentProjects = () => {
         {/* Project list */}
         {projects.map((item) => (
           <div
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center 
+            className="sm:h-[41rem] h-[32rem] 
+            lg:min-h-[32.5rem] flex items-center 
             justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
