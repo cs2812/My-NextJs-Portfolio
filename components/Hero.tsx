@@ -2,10 +2,12 @@ import React from "react";
 // from Aceternity UI
 import { Spotlight } from "./Ui/Sportlight";
 import { TextGenerateEffect } from "./Ui/TextGenerateEffect ";
+import MagicButton from "./Ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-16">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 
@@ -27,7 +29,7 @@ const Hero = () => {
       <div
         className="h-screen w-full
        dark:bg-black-100 bg-white  
-       dark:bg-grid-white/[0.05] 
+       dark:bg-grid-white/[0.03] 
        bg-grid-black/[0.2] 
        absolute top-0 left-0
         flex items-center 
@@ -52,16 +54,24 @@ const Hero = () => {
             Dynamic Web Magic with Next.js
           </h2>
           <TextGenerateEffect
-          className="text-center text-[40px]
-          md:text-5xl lg:text-6xl"
-          words="Transforming Concepts into Seamless Experiences"/>
+            className="text-center text-[40px]
+           md:text-4xl lg:text-6xl"
+            words="Transforming Concepts into Seamless User Experiences"
+          />
 
-          <p className="text-center 
+          <p
+            className="text-center 
           md:tracking-wider 
           md-4 text-sm md:text-lg 
-          lg:text-2xl">
-            Hi, I&apos;m Chetan Sharma, a Software Developer based in India.  
+          lg:text-2xl"
+          >
+            Hi, I&apos;m Chetan Sharma, a Software Developer based in India.
           </p>
+          <MagicButton
+            position="right"
+            icon={<FaLocationArrow />}
+            title="Show my work"
+          />
         </div>
       </div>
     </div>
